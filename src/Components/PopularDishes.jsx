@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react';
+import { Star, MapPin } from 'lucide-react';
 
 export function PopularDishes() {
   const dishes = [
@@ -8,7 +8,8 @@ export function PopularDishes() {
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80",
       price: "2500 FCFA",
       rating: "4.8",
-      time: "20-30 min"
+      time: "20-30 min",
+      restaurant: "Chez Mamou"
     },
     {
       name: "Thieboudienne",
@@ -16,7 +17,8 @@ export function PopularDishes() {
       image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80",
       price: "3000 FCFA",
       rating: "4.9",
-      time: "25-35 min"
+      time: "25-35 min",
+      restaurant: "Le Délice Africain"
     },
     {
       name: "Poulet Yassa",
@@ -24,7 +26,8 @@ export function PopularDishes() {
       image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80",
       price: "3500 FCFA",
       rating: "4.7",
-      time: "20-30 min"
+      time: "20-30 min",
+      restaurant: "Amandine"
     }
   ];
 
@@ -53,6 +56,11 @@ export function PopularDishes() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{dish.name}</h3>
+                  {/* Icône de localisation avec le nom du restaurant */}
+                  <div className="flex items-center text-neutral-dark text-sm mb-2">
+                    <MapPin className="h-4 w-4 mr-1 text-primary" />
+                    <span>{dish.restaurant}</span>
+                  </div>
                   <p className="text-neutral-light mb-4">{dish.description}</p>
                   <div className="flex justify-between items-center">
                     <span className="text-primary font-bold text-lg">{dish.price}</span>
