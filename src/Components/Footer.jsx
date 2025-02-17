@@ -1,4 +1,6 @@
 import { UtensilsCrossed } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 export function Footer() {
   return (
@@ -17,8 +19,8 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Opportunités</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">Devenir Livreur</a></li>
-              <li><a href="#" className="hover:text-white">Ouvrir un Restaurant</a></li>
+             <li><Link to="/devenir-livreur" className="hover:text-white">Devenir Livreur</Link></li>
+             <li><Link to="/ouvrir-restaurant" className="hover:text-white">Ouvrir un Restaurant</Link></li>
               <li><a href="#" className="hover:text-white">Partenariats</a></li>
             </ul>
           </div>
@@ -47,7 +49,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 IkaPlat. Tous droits réservés.</p>
+          <p>&copy; 2025 IkaPlat. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

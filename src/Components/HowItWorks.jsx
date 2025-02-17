@@ -27,7 +27,7 @@ export function HowItWorks() {
     {
       step: "4",
       title: "Suivez votre commande",
-      description: "Livraison rapide à votre porte",
+      description: "Livraison rapide à votre porte le plus vite",
       icon: MapPin,
       color: "bg-green-600"
     }
