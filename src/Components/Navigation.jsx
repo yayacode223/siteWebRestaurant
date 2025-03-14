@@ -28,10 +28,13 @@ export function Navigation() {
               0
             </span>
           </button>
-          <button className="bg-red-600 backdrop-blur-md px-6 py-3 rounded-xl hover:bg-accent transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg">
-            <LogIn className="h-5 w-5" />
-            <span className="font-medium">Connexion</span>
-          </button>
+          <button 
+  onClick={() => navigate('/login')}
+  className="bg-red-600 backdrop-blur-md px-6 py-3 rounded-xl hover:bg-accent transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 shadow-lg"
+>
+  <LogIn className="h-5 w-5" />
+  <span className="font-medium">Connexion</span>
+</button>
         </div>
         <button 
           onClick={toggleMenu}
